@@ -60,7 +60,7 @@ var loaded struct {
 	*api.Options
 }
 
-var defaultSessionDuration = 5 * time.Minute
+var defaultSessionDuration = 525600 * time.Minute
 
 // load a model into memory if it is not already loaded, it is up to the caller to lock loaded.mu before calling this function
 func load(c *gin.Context, model *Model, opts api.Options, sessionDuration time.Duration) error {
